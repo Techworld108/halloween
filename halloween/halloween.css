@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fruktur:ital@1&family=Island+Moments&family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.spider {
+    position: absolute;
+    top: 0;
+    animation: animateSpider 15s ease-in-out infinite;
+}
+
+@keyframes animateSpider {
+
+    0%,
+    100% {
+        transform: translateY(-500px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+.pumpkin01 {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    animation: animatepumpkin01 8s ease-in-out infinite;
+}
+
+@keyframes animatepumpkin01 {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+.pumpkin02 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    animation: animatepumpkin01 4s ease-in-out infinite;
+    scale: 0.5;
+}
+
+@keyframes animatepumpkin01 {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+.spiderweb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+.text {
+    position: absolute;
+    color: rgb(70, 73, 73);
+    font-size: 12vw;
+    font-family: 'Fruktur', cursive;
+    font-weight: 100;
+    animation: animateText 5s linear infinite;
+}
+@keyframes animateText{
+    0%,18%,20%,50.1%,60.1%,65%,80%,90.10%,92%{
+        color: rgb(103, 106, 106);
+        text-shadow: none;
+
+    }
+    18.1%,20.1%,50.1%,60%,65%,80.1%,90%,92.1%,100%{
+        color: rgb(255, 247, 0);
+        text-shadow: 0 0 10px rgb(255, 225, 0),
+        0 0 20px rgb(255, 191, 0),
+        0 0 40px rgb(255, 196, 0),
+        0 0 80px rgb(255, 162, 0),
+        0 0 100px rgb(255, 174, 0);
+    }
+}
